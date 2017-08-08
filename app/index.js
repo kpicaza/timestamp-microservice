@@ -4,8 +4,6 @@ var timeService = require('./time/service');
 
 var app = express();
 
-process.env.PORT = 4200;
-
 app.get("/", function (request, response) {
     response.sendFile(path.resolve('views/index.html'));
 });
